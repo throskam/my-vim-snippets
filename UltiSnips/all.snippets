@@ -20,3 +20,7 @@ endsnippet
 snippet diso "ISO format datetime" w
 `!v strftime("%FT%T%z")`
 endsnippet
+
+snippet uuid "Random UUID" w
+`!p if not snip.c: import uuid; snip.rv = uuid.uuid4()`
+endsnippet
