@@ -48,6 +48,15 @@ export default {
 }
 endsnippet
 
+snippet vc "Vue container"
+export default {
+	name: '`!v expand('%:t:r')`'$0,
+	render (h) {
+		return h('Hello world')
+	}
+}
+endsnippet
+
 snippet td "BDD describe"
 describe('$1', () => {
 	$0
